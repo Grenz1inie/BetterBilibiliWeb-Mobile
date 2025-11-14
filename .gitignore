@@ -1,0 +1,60 @@
+# dependencies
+node_modules
+/node_modules
+/bilibili-api/node_modules
+
+# production
+/dist
+/build
+
+# api service log
+/bilibili-api/log
+
+# environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/log
+/logs
+
+# testing
+/coverage
+.nyc_output
+
+# misc
+.cache
+.temp
+*.pid
+*.seed
+*.pid.lock
+
+# webpack
+.webpack
+/server/dist
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# package-lock (if using yarn)
+# package-lock.json

@@ -1,0 +1,62 @@
+@import "../../assets/stylus/_theme.styl"
+@import "../../assets/stylus/px2rem.styl"
+
+.tab-bar
+  display: flex
+  overflow-x: scroll
+  overflow-y: hidden
+  height: px2rem(44)
+  background-color: var(--color-bg-primary)
+  
+  &::-webkit-scrollbar
+    display: none
+  
+  .tab
+    flex: 0 0 auto
+    position: relative
+    padding: 0 px2rem(16)
+    color: var(--color-text-secondary)
+    font-weight: var(--font-weight-medium)
+    cursor: pointer
+    transition: var(--transition-fast)
+    
+    &:active
+      background-color: var(--color-bg-hover)
+    
+    &.indicate
+      color: var(--color-bilibili-pink)
+      font-weight: var(--font-weight-bold)
+      
+      span:after
+        position: absolute
+        content: ""
+        width: 60%
+        left: 20%
+        bottom: px2rem(8)
+        height: px2rem(3)
+        background: linear-gradient(90deg, var(--color-bilibili-pink-light) 0%, var(--color-bilibili-pink) 50%, var(--color-bilibili-pink-light) 100%)
+        border-radius: px2rem(2)
+        animation: slideIn 0.3s ease
+    
+    &.highlight
+      color: var(--color-bilibili-pink)
+      font-weight: var(--font-weight-bold)
+      background-color: rgba(251, 114, 153, 0.08)
+      border-radius: var(--radius-lg)
+    
+    span
+      position: relative
+      display: inline-block
+      padding: 0 px2rem(4)
+      font-size: var(--font-size-md)
+      line-height: px2rem(44)
+      white-space: nowrap
+
+@keyframes slideIn
+  from
+    width: 0
+    opacity: 0
+  to
+    width: 60%
+    opacity: 1
+      

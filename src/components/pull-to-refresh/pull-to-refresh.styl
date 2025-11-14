@@ -1,0 +1,61 @@
+@import "../../assets/stylus/_theme.styl"
+@import "../../assets/stylus/px2rem.styl"
+
+.pull-to-refresh
+  position: relative
+  width: 100%
+  min-height: 100vh
+  background-color: var(--color-bg-secondary)
+  overflow-x: hidden
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+
+.refresh-indicator
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  padding-bottom: px2rem(12)
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--color-bg-secondary) 100%)
+  z-index: 99
+  transform-origin: top
+  pointer-events: none
+  overflow: hidden
+  
+  .indicator-content
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: px2rem(8)
+  
+  .icon-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    width: px2rem(32)
+    height: px2rem(32)
+    border-radius: var(--radius-round)
+    background-color: var(--color-bg-primary)
+    box-shadow: var(--shadow-md)
+    
+    &.spinning
+      animation: none
+  
+  .status-text
+    font-size: var(--font-size-sm)
+    color: var(--color-text-secondary)
+    font-weight: var(--font-weight-medium)
+    white-space: nowrap
+
+.content-wrapper
+  position: relative
+  width: 100%
+  min-height: 100vh
+  background-color: var(--color-bg-secondary)
+  will-change: transform
+  // 确保内容始终可见
+  visibility: visible
+  opacity: 1

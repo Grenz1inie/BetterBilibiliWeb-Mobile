@@ -1,0 +1,104 @@
+@import "../../assets/stylus/_theme.styl"
+@import "../../assets/stylus/px2rem.styl"
+
+.top-wrapper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background: linear-gradient(to bottom, var(--color-bg-primary) 0%, var(--color-bg-primary) 95%, rgba(255,255,255,0.98) 100%)
+  backdrop-filter: blur(20px)
+  z-index: var(--z-header)
+  box-shadow: var(--shadow-sm)
+  
+  .partition
+    position: relative
+    display: flex
+    align-items: center
+    height: px2rem(44)
+    padding-right: px2rem(12)
+    background-color: var(--color-bg-primary)
+    
+    .tab-bar
+      flex: 1
+      overflow: hidden
+    
+    .switch
+      position: absolute
+      top: 0
+      bottom: 0
+      right: px2rem(12)
+      display: flex
+      align-items: center
+      justify-content: center
+      width: px2rem(36)
+      height: px2rem(44)
+      color: var(--color-text-tertiary)
+      font-size: px2rem(16)
+      cursor: pointer
+      transition: var(--transition-fast)
+      
+      &:active
+        color: var(--color-bilibili-pink)
+        background-color: rgba(251, 114, 153, 0.08)
+        border-radius: var(--radius-md)
+  
+  .drawer-position
+    position: absolute
+    width: 100%
+    top: px2rem(44)
+    z-index: 2
+
+.content-wrapper
+  padding-top: px2rem(88)
+  background-color: var(--color-bg-secondary)
+  min-height: 100vh
+  
+  .banner-slider
+    padding: px2rem(12) px2rem(12) 0
+    height: px2rem(140)
+    
+    > div
+      height: 100%
+      border-radius: var(--radius-xl)
+      overflow: hidden
+      box-shadow: var(--shadow-md)
+      
+      img
+        object-fit: cover
+  
+  .video-list
+    padding: px2rem(12) px2rem(6) px2rem(20)
+    background-color: var(--color-bg-secondary)
+
+:global(.swiper-pagination-wrapper)
+  position: absolute
+  left: 0
+  bottom: px2rem(8)
+  width: 100%
+  text-align: center
+  z-index: 10
+
+:global(.swiper-pagination-wrapper > .swiper-pagination)
+  position: relative
+  display: inline-block
+  padding: px2rem(4) px2rem(8)
+  border-radius: px2rem(10)
+  background-color: rgba(0, 0, 0, 0.4)
+  backdrop-filter: blur(8px)
+  z-index: 0
+
+:global(.swiper-pagination-bullet)
+  float: left
+  width: px2rem(6)
+  height: px2rem(6)
+  margin: 0 px2rem(3)
+  border-radius: px2rem(3)
+  background-color: rgba(255, 255, 255, 0.6)
+  opacity: 1
+  transition: all 0.3s ease
+
+:global(.swiper-pagination-bullet-active)
+  width: px2rem(16)
+  background-color: var(--color-bilibili-pink)
+  box-shadow: 0 0 8px rgba(251, 114, 153, 0.6)

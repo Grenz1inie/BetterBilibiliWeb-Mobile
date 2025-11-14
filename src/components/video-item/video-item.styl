@@ -1,0 +1,108 @@
+@import "../../assets/stylus/_theme.styl"
+@import "../../assets/stylus/px2rem.styl"
+
+.video
+  display: inline-block
+  float: left
+  width: 50%
+  padding: 0 px2rem(6)
+  margin-bottom: px2rem(12)
+  box-sizing: border-box
+  
+  .video-link
+    display: block
+    text-decoration: none
+  
+  .image-container
+    position: relative
+    width: 100%
+    padding-bottom: 63%
+    
+    .image-wrapper
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: var(--color-bg-secondary)
+      background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, .3))
+      border-radius: var(--radius-lg)
+      text-align: center
+      overflow: hidden
+      box-shadow: var(--shadow-card)
+      transition: var(--transition-base)
+      
+      &:active
+        transform: scale(0.98)
+        box-shadow: var(--shadow-sm)
+      
+      .tv
+        width: px2rem(88)
+        height: 100%
+        opacity: 0.15
+      
+      .pic
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        z-index: 1
+        opacity: 0
+        transition: opacity 0.4s ease
+        transform: translate3d(0, 0, 0)
+      
+      .cover
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 100%
+        height: px2rem(36)
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%)
+        z-index: 2
+      
+      .info
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 100%
+        height: px2rem(28)
+        display: flex
+        align-items: center
+        padding: 0 px2rem(8)
+        font-size: var(--font-size-xs)
+        color: var(--color-text-white)
+        z-index: 3
+        
+        .stat-item
+          display: flex
+          align-items: center
+          margin-right: px2rem(12)
+          
+          .icon
+            width: px2rem(14)
+            height: px2rem(14)
+            margin-right: px2rem(4)
+            opacity: 0.9
+          
+          .count
+            font-size: var(--font-size-xs)
+            font-weight: var(--font-weight-medium)
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
+  
+  .title
+    height: px2rem(40)
+    line-height: px2rem(20)
+    margin-top: px2rem(8)
+    padding: 0 px2rem(2)
+    font-size: var(--font-size-base)
+    font-weight: var(--font-weight-medium)
+    color: var(--color-text-primary)
+    text-align: left
+    letter-spacing: 0
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    word-break: break-word
