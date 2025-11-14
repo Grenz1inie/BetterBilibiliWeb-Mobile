@@ -7,7 +7,7 @@
   <a href="https://github.com/jasonslyvia/react-lazyload"><img src="https://img.shields.io/badge/react--lazyload-v2.3.0-yellow.svg" alt="react-lazyload"></a>
 </p>
 
-# react-bilibili
+# BetterBilibiliWeb-Mobile
 > **此项目仅供学习和交流，不得用于商业用途**
 
 高仿B站web移动端
