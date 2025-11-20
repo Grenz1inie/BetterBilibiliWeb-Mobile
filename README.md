@@ -58,21 +58,16 @@
 
 ## 屏幕截图
 <p align="center">
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/01_index.png" width="326px" height="680px" alt="index" />
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/02_channel.png" width="326px" height="680px" alt="channel" />
+  <img src="./images/1.png" width="326px" height="680px" alt="index" />
+  <img src="./images/2.png" width="326px" height="680px" alt="channel" />
 
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/03_ranking.png" width="326px" height="680px" alt="ranking" />
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/04_detail.png" width="326px" height="680px" alt="detail" />
+  <img src="./images/3.png" width="326px" height="680px" alt="ranking" />
+  <img src="./images/4.png" width="326px" height="680px" alt="detail" />
 
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/05_detail.png" width="326px" height="680px" alt="detail" />
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/06_space.png" width="326px" height="680px" alt="space" />
+  <img src="./images/5.png" width="326px" height="680px" alt="space" />
+  <img src="./images/6.png" width="326px" height="680px" alt="search" />
 
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/07_search.png" width="326px" height="680px" alt="search" />
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/08_history.png" width="326px" height="680px" alt="history" />
+  <img src="./images/7.png" width="326px" height="680px" alt="live" />
+  <img src="./images/8.png" width="326px" height="680px" alt="history" />
 
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/09_live.png" width="326px" height="680px" alt="live" />
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/10_live_list.png" width="326px" height="680px" alt="live list" />
-
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/11_room.png" width="326px" height="680px" alt="room" />
-  <img src="https://dxx.github.io/static-resource/react-bilibili/screenshots/12_room.png" width="326px" height="680px" alt="room" />
 </p>
